@@ -1,0 +1,223 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{10A85E07-CFBD-41D8-A1E7-08A726A30FF5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TTCM</RootNamespace>
+    <AssemblyName>TTCM</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>table_tennis.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoWin32Manifest>true</NoWin32Manifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Manager Forms\Checkout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager Forms\Checkout.Designer.cs">
+      <DependentUpon>Checkout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager Forms\AddNewDrink.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager Forms\AddNewDrink.Designer.cs">
+      <DependentUpon>AddNewDrink.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TTCMDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TTCMDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Manager Forms\CheckDrinkInStore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager Forms\CheckDrinkInStore.Designer.cs">
+      <DependentUpon>CheckDrinkInStore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager Forms\AddNewCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager Forms\AddNewCustomer.Designer.cs">
+      <DependentUpon>AddNewCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager Forms\DrinkTransfer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager Forms\DrinkTransfer.Designer.cs">
+      <DependentUpon>DrinkTransfer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Manager Forms\ReportByDate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager Forms\ReportByDate.Designer.cs">
+      <DependentUpon>ReportByDate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SplashForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SplashForm.Designer.cs">
+      <DependentUpon>SplashForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager Forms\UpdateTableRent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager Forms\UpdateTableRent.Designer.cs">
+      <DependentUpon>UpdateTableRent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager Forms\UpdateCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager Forms\UpdateCustomer.Designer.cs">
+      <DependentUpon>UpdateCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager Forms\UpdateDrinkPrice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager Forms\UpdateDrinkPrice.Designer.cs">
+      <DependentUpon>UpdateDrinkPrice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager Forms\UpdateTimePlayed.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager Forms\UpdateTimePlayed.Designer.cs">
+      <DependentUpon>UpdateTimePlayed.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Manager Forms\Checkout.resx">
+      <DependentUpon>Checkout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager Forms\AddNewDrink.resx">
+      <DependentUpon>AddNewDrink.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager Forms\CheckDrinkInStore.resx">
+      <DependentUpon>CheckDrinkInStore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager Forms\AddNewCustomer.resx">
+      <DependentUpon>AddNewCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager Forms\DrinkTransfer.resx">
+      <DependentUpon>DrinkTransfer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager Forms\UpdateTimePlayed.resx">
+      <DependentUpon>UpdateTimePlayed.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Manager Forms\ReportByDate.resx">
+      <DependentUpon>ReportByDate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplashForm.resx">
+      <DependentUpon>SplashForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager Forms\UpdateTableRent.resx">
+      <DependentUpon>UpdateTableRent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager Forms\UpdateCustomer.resx">
+      <DependentUpon>UpdateCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager Forms\UpdateDrinkPrice.resx">
+      <DependentUpon>UpdateDrinkPrice.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="TTCMDataSet.xsc">
+      <DependentUpon>TTCMDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="TTCMDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TTCMDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TTCMDataSet.xss">
+      <DependentUpon>TTCMDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="table_tennis.ico" />
+    <Content Include="TTCM.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\splash.jpg" />
+    <Content Include="Resources\table_tennis.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DBLibraby\DBLibrary.csproj">
+      <Project>{C4BA2FD3-A482-4408-9C8F-AEA76C396DE2}</Project>
+      <Name>DBLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
